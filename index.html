@@ -1,11 +1,196 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/686/686104.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <title>Jay Portfolio</title>
 </head>
 <body>
-<h1>Hello World!</h1>
+    <!-- Navbar start here -->
+    <div class="navigation-bar">
+        
+        <nav class="navbar navbar-expand-lg navbar-light ">
+  <a class="navbar-brand" href="#"><span class="brand tracking-in-expand">Jay Jeswani</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home"><span class="navmenu">Home</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about"><span class="navmenu">About</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills"><span class="navmenu">Skills</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#project"><span class="navmenu">Project</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact"><span class="navmenu">Contact</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    </div>
+    <!-- Navbar ends here -->
+
+    <div class="main-container">
+        <section id="home" class="portfolio-section">
+        <div id="home-info">
+            <span class="info">Hi</span><br>
+            <span class="info">My Name is</span><br>
+            <span class="brand myname tracking-in-expand-fwd">Jay Jeswani</span><br>
+            <span class="info">I am a <br></span><span class="designation"> Full Stack Developer</span><br>
+            <button href="demo.pdf" class="rsmbtn">RESUME</button>
+        </div>
+    </section>
+    <section id="about" class="portfolio-section about-section">
+    <div class="aboutmain">
+        <div class="myimage">
+            <img class="carrerimage" src="https://media.foundit.in/career-advice/wp-content/uploads/2021/10/career-objective-for-fresher-resume.jpg">
+        </div>
+        <div class="carrerobj">
+        <h1 class="heading" >About</h1>
+        <p class="carrerinfo">Passionate and skilled Java Full Stack Developer with a commitment to crafting efficient, scalable, and user-centric applications. Leveraging expertise in both front-end and back-end development, I aim to contribute innovative solutions to projects while continuously enhancing my technical proficiency.
+        </p>
+    </div></div>
+    </section>
+    <section id="skills" class="portfolio-section">
+        <h1 class="heading">Skills</h1>
+        <table class="tb1" height="450px" width="90%" cellspacing="50px">
+            <tr align="Centre" valign="top">
+                <div class="borderskills">
+                    <td width=50% data-aos="slide-right">
+                        <h2 class="skills-subheading">Languages</h2>
+                        <p class="detailedskills">
+                            Core Java, C, C++, Python, HTML, CSS, JavaScript, SQL
+                        </p>
+                    </td>
+                </div>
+                <div class="borderskills">
+                    <td data-aos="slide-left">
+                        <h2 class="skills-subheading">API's & Frameworks</h2>
+                        <p class="detailedskills">
+                        Collection, Stream API, REST API, Spring, Hibernates, Servlets, JDBC, SpringBoot, JSP, ReactJS</p>
+                    </td>
+                </div>
+            </tr>
+          <tr align="Centre" valign="top">
+            <div class="borderskills">
+                <td data-aos="slide-right">
+                    <h2 class="skills-subheading">Tools</h2>
+                    <p class="detailedskills">
+                        VS Code, Eclipse, Git, Github, Netbeans, Mysql workbench, MongoDB, Tomcat, Maven.
+                    </p>
+                </td>
+            </div>
+            <div class="borderskills">
+                <td data-aos="slide-left">
+                    <h2 class="skills-subheading">Operating Systems</h2>
+                    <p class="detailedskills">
+                        Windows, Android, ios, Linux, Ubuntu.
+                    </p>
+                </td>
+            </div>
+          </tr>
+        </table>
+    </section>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration:2000
+    });
+  </script>
+    <section id="project" class="portfolio-section" >
+        <h1 class="heading">Projects</h1>
+        <div class="card-deck" margin-top=20px>
+  <div class="card">
+    <img src="https://i.ytimg.com/vi/jDwC5m7c7BU/maxresdefault.jpg" class="card-img-top" alt="..." height="300px">
+    <div class="card-body">
+      <h5 class="card-title">Object detection And Counting</h5>
+      <p class="card-text">Object counting with Ultralytics YOLOv8 involves accurate identification and counting of specific objects in videos and camera streams. YOLOv8 excels in real-time applications, providing efficient and precise object counting for various scenarios like crowd analysis and surveillance, thanks to its state-of-the-art algorithms and deep learning capabilities.
+</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Currently Working on it</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://www.codingnepalweb.com/wp-content/uploads/2021/11/Text-To-Speech-Converter-in-HTML-CSS-JavaScript.jpg" class="card-img-top" alt="..." height="300px">
+    <div class="card-body">
+      <h5 class="card-title">Text to Speech Converter</h5>
+      <p class="card-text">Text To Speech (TTS) is a technology that enables your text to be converted into speech sounds. In this project (Text To Speech Converter App), you can convert your text into speech on different voices. A pause and resume option is also available if your text character length is more than 80.
+I made it using HTML CSS & Vanilla JavaScript. No external JavaScript libraries or APIs are used to make this TTS App and I hope you have liked this project.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Completed 3 Months ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://i.ytimg.com/vi/lVMUzkTiRO8/maxresdefault.jpg" class="card-img-top" alt="..." height="300px">
+    <div class="card-body">
+      <h5 class="card-title">Code Editor</h5>
+      <p class="card-text">Welcome to code editor. In this code editor you can edit HTML, CSS and JavaScript code, and view the result in your browser.The window to the left is editable - edit the code and click on the "Run" button to view the result in the right window.The "Result Size" returns the width and the height of the result window in pixels (even when you resize the browser window).You can control the size of a window with the bar in between the windows (draggable gutter).</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Completed 6 Months ago</small>
+    </div>
+  </div>
+</div>
+
+<section id="contact" class="portfolio-section">
+  <h1 class="heading">Contact</h1>
+  <div class="container contact-container">
+    <div class="contact-info">
+      <h2>Student Details</h2>
+      <table>
+        <tr>
+          <td>Email:</td>
+          <td>example@example.com</td>
+        </tr>
+        <tr>
+          <td>GitHub:</td>
+          <td><a href="https://github.com/example">github.com/example</a></td>
+        </tr>
+        <tr>
+          <td>LinkedIn:</td>
+          <td><a href="https://linkedin.com/in/example">linkedin.com/in/example</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="contact-form">
+      <h2>Contact Form</h2>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Comment</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+    
+
 </body>
 </html>

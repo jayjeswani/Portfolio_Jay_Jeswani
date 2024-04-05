@@ -1,0 +1,279 @@
+{
+    padding: 0;
+    margin: 0;
+}
+.portfolio-sections{
+    height: 400px;
+    width: 100%;
+    border: 2px solid black;
+   
+    background-color: white;
+}
+.navigation-bar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    
+}
+.portfolio-sections h1{
+    margin-top: 50px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.main-container{
+    position: relative;
+    top:50px;
+}
+.brand{
+    font-size: 30px;
+    font-family: Arial Black;
+    font-variant: small-caps;
+    color: orangered;
+}
+.navmenu{
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding-left: 15px;
+}
+.navmenu:hover{
+    text-decoration: underline 2px solid black;
+    text-underline-offset: 6px;
+    
+}
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+#home{
+   height: 370px;
+   background-repeat: no-repeat;
+   background-size:20%;
+   background-position:100% 20%;
+   border: none;
+}
+
+
+
+#home-info{
+    position: absolute;
+    top: 20px;
+    width: 400px;
+    height: 250px;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: justify-all;
+}
+.info{
+    font-weight: bolder;
+    color: lightslategray;
+}
+.designation{
+    color: grey;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.myname{
+    font-size: 35px;
+}
+.rsmbtn{
+    height: 40px;
+    width: 100px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size:15px;
+    font-weight: bolder;
+    background-color: royalblue;
+    color: white;
+    transition-duration: 1s;
+}
+.rsmbtn:hover{
+    background-color: white;
+    color: royalblue;
+    border: 3px solid royalblue;
+   
+    transform: scale(1.1);
+}
+.about-section{
+    height: 500px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.aboutmain{
+    height: 500px;
+    width:100%;
+    display: flex;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.aboutmain div{
+    height: 500px;
+    width:100%;
+}
+.minion{
+    margin-top: 70px;
+    margin-left: 100px;
+  width: 70%;
+  height:70%;
+    animation-duration: 4s;
+    animation-name: zoom;
+    animation-iteration-count: 1;
+}
+@keyframes zoom{
+    100%{
+        transform: scale(1.2);
+        border-radius: 60px;
+    }
+}
+.heading{
+    font-family: Arial black;
+    text-align: center;
+    margin: 30px 0px;
+    font-size: 40px;
+    color: royalblue;   
+}
+.carrerobj{
+    padding: 30px;
+}
+.carrerinfo{
+    text-align: justify;
+    line-height: 40px;
+    text-indent: 100px;
+    word-spacing: 7px;
+    letter-spacing: 1px;
+}
+ #skills{
+  height: 550px;
+  width: 100%;
+  background-color: white;
+
+}
+.tb1{
+  margin-left: 5%;
+
+}
+.tb1 tr td{
+  padding: 40px;
+  border-radius: 10px;
+  transition-duration: 1.5s;
+}
+.skills-subheading{
+  color: orangered;
+  font-family:sans-serif ;
+  font-weight: bolder;
+  font-size: 25px;
+  font-variant: small-caps;
+}
+.detailedskills{
+  font-size: 23px;
+  font-weight: bolder;
+  color: rgb(109, 101, 101);
+  line-height:40px ;
+  word-spacing: 3px;
+  margin-top: 20px;
+}
+
+.card-title{
+  font-weight: bolder;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  align-content: center;
+  color: orangered;
+}
+.card-text{
+   color: rgb(109, 101, 101);
+   align-content: justify;
+   font-family: sans-serif;
+}
+#project{
+  height: 1500px;
+}
+
+#contact {
+  height: 500px;
+  width: 100%;
+  background-color: white;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+  padding: 20px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-size: 30px;
+  color: royalblue;
+  margin-bottom: 20px;
+}
+
+.contact-info table {
+  width: 100%;
+}
+
+.contact-info table td {
+  padding: 10px 0;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form button {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: royalblue;
+  color: white;
+  border: none;
+  transition-duration: 0.5s;
+}
+
+.contact-form button:hover {
+  background-color: white;
+  color: royalblue;
+  border: 2px solid royalblue;
+  transform: scale(1.1);
+}
